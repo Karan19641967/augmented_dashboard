@@ -35,39 +35,22 @@ import insights  # your insights.py module
 # ========== DARK THEME FIX ==========
 st.markdown("""
     <style>
-        body {
-            color: white;
+        /* Page background and text */
+        body, .stApp {
             background-color: #0c1426;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-.main-header {
-            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
-            padding: 1.2rem;
-            text-align: center;
             color: white;
-            border-radius: 10px;
-            font-size: 28px;
-            font-weight: bold;
         }
 
-        /* Make all text white */
-        body, .css-18e3th9, .css-1d391kg, .css-1v0mbdj, .css-1cpxqw2 {
+        /* Headers */
+        h1, h2, h3, h4, h5, h6 {
+            color: #ffffff !important;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Sidebar text */
+        .css-1aumxhk, .css-18e3th9, .css-1d391kg, .css-1v0mbdj, .css-1cpxqw2 {
             color: white !important;
         }
-
-        /* Background for entire page */
-        .stApp {
-            background-color: #0c1426;
-        }
-
-        /* Sidebar text color */
-        .css-1aumxhk {
-            color: white;
-        }
-    </style>
-""", unsafe_allow_html=True)
     
     .metric-card {
         background: linear-gradient(135deg, #1e3a5f, #2d5a87);

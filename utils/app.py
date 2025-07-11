@@ -330,7 +330,7 @@ def main():
             with col2:
                 # Category distribution
                 cat_dist = filtered_df['Category'].value_counts().head(10)
-                fig_cat_dist = px.donut(
+                fig_cat_dist = px.pie(
                     values=cat_dist.values,
                     names=cat_dist.index,
                     title="Top 10 Categories by Order Count",

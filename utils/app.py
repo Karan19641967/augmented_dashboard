@@ -27,7 +27,7 @@ st.set_page_config(
 )
 
 # Custom CSS for dark gradient theme
-  import streamlit as st
+ 
 import pandas as pd
 import plotly.express as px
 import insights  # your insights.py module

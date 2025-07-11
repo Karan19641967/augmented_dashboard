@@ -102,13 +102,7 @@ def load_data():
 
         # Clean column names
         df.columns = df.columns.str.strip()
-        return df
-    except FileNotFoundError:
-        st.error("❌ CSV file 'amazon_sales_report.csv' not found. Please ensure the file is in the same directory.")
-        return None
-    except Exception as e:
-        st.error(f"❌ Error loading data: {str(e)}")
-        return None
+ 
 
 def main():
     # Header

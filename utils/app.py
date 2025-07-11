@@ -98,7 +98,7 @@ st.markdown("""
 def load_data():
     """Load and cache the CSV data"""
     try:
-        df = pd.read_csv('amazon_sales_report.csv')
+        df = pd.read_csv('amazon_sale_report.csv')
         # Clean column names
         df.columns = df.columns.str.strip()
         return df

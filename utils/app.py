@@ -34,12 +34,12 @@ import insights  # your insights.py module
 
 # ========== DARK THEME FIX ==========
 st.markdown("""
-    <style>
-    html, body, [class*="css"] {
-        color: white !important;
-        background-color: #1e1e1e !important;
-    }
-    ...
+  .main-header {
+            background: linear-gradient(90deg, #1e3a5f, #2d5a87);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        /* more CSS here */
     </style>
 """, unsafe_allow_html=True)
 .main-header {

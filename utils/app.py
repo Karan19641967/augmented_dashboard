@@ -27,12 +27,18 @@ st.set_page_config(
 )
 
 # Custom CSS for dark gradient theme
-st.markdown("""
-<style>
-    .stApp {
-        background: linear-gradient(135deg, #0c1426 0%, #1e3a5f 50%, #2d5a87 100%);
-        color: white;
+    body, .stApp, .css-18e3th9, .css-1d391kg, .css-1v0mbdj, .css-1dp5vir, .block-container {
+        color: white !important;
     }
+
+    .stTextInput, .stSelectbox, .stMultiSelect, .stDateInput, label, .css-1fv8s86 {
+        color: white !important;
+    }
+
+    .sidebar-content {
+        color: white !important;
+    }
+
     
     .main-header {
         background: linear-gradient(90deg, #1e3a5f, #2d5a87);

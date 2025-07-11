@@ -27,20 +27,63 @@ st.set_page_config(
 )
 
 # Custom CSS for dark gradient theme
-    body, .stApp, .css-18e3th9, .css-1d391kg, .css-1v0mbdj, .css-1dp5vir, .block-container {
+   import streamlit as st
+
+st.markdown("""
+    <style>
+    /* Global white text */
+    html, body, [class*="css"] {
+        color: white !important;
+        background-color: #1e1e1e !important;
+    }
+
+    /* Set background for main container */
+    .main {
+        background-color: #1e1e1e !important;
+    }
+
+    /* White text for titles, headers, subheaders */
+    .st-bb, .st-cs, .st-bz, .st-co, .st-ct {
         color: white !important;
     }
 
-    .stTextInput, .stSelectbox, .stMultiSelect, .stDateInput, label, .css-1fv8s86 {
+    /* White text in metric values */
+    div[data-testid="stMetric"] {
         color: white !important;
     }
 
-    .sidebar-content {
+    /* Inputs and labels */
+    label, .stTextInput, .stSelectbox, .stSlider, .stRadio, .stCheckbox, .stDateInput {
         color: white !important;
     }
 
-    
-    .main-header {
+    /* White text in dataframes and tables */
+    .stDataFrame, .stTable {
+        color: white !important;
+    }
+
+    /* White for expander and sidebar titles */
+    .streamlit-expanderHeader, .css-1v0mbdj, .css-1d391kg {
+        color: white !important;
+    }
+
+    /* Override charts */
+    svg {
+        color: white !important;
+    }
+
+    /* Fix Streamlit widgets specifically */
+    .css-ffhzg2, .css-1offfwp, .css-1v0mbdj, .css-1d391kg, .css-1ht1j8u {
+        color: white !important;
+    }
+
+    /* Adjust buttons */
+    button {
+        color: white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+.main-header {
         background: linear-gradient(90deg, #1e3a5f, #2d5a87);
         padding: 1rem;
         border-radius: 10px;

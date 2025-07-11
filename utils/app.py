@@ -43,12 +43,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 .main-header {
-        background: linear-gradient(90deg, #1e3a5f, #2d5a87);
-        padding: 1rem;
-        border-radius: 10px;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            padding: 1.2rem;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Make all text white */
+        body, .css-18e3th9, .css-1d391kg, .css-1v0mbdj, .css-1cpxqw2 {
+            color: white !important;
+        }
+
+        /* Background for entire page */
+        .stApp {
+            background-color: #0c1426;
+        }
+
+        /* Sidebar text color */
+        .css-1aumxhk {
+            color: white;
+        }
+    </style>
+""", unsafe_allow_html=True)
     
     .metric-card {
         background: linear-gradient(135deg, #1e3a5f, #2d5a87);

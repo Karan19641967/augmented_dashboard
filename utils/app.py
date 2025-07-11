@@ -96,14 +96,9 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    """Load and cache the CSV data"""
-    try:
-       pd.read_csv("data/amazon_sale_report.csv")
-
-        # Clean column names
-        df.columns = df.columns.str.strip()
- 
-
+    df = pd.read_csv("data/amazon_sale_report.csv")
+    df.columns = df.columns.str.strip()
+    return df
 def main():
     # Header
     st.markdown('<div class="main-header">', unsafe_allow_html=True)

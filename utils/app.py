@@ -27,60 +27,19 @@ st.set_page_config(
 )
 
 # Custom CSS for dark gradient theme
-   import streamlit as st
+  import streamlit as st
+import pandas as pd
+import plotly.express as px
+import insights  # your insights.py module
 
+# ========== DARK THEME FIX ==========
 st.markdown("""
     <style>
-    /* Global white text */
     html, body, [class*="css"] {
         color: white !important;
         background-color: #1e1e1e !important;
     }
-
-    /* Set background for main container */
-    .main {
-        background-color: #1e1e1e !important;
-    }
-
-    /* White text for titles, headers, subheaders */
-    .st-bb, .st-cs, .st-bz, .st-co, .st-ct {
-        color: white !important;
-    }
-
-    /* White text in metric values */
-    div[data-testid="stMetric"] {
-        color: white !important;
-    }
-
-    /* Inputs and labels */
-    label, .stTextInput, .stSelectbox, .stSlider, .stRadio, .stCheckbox, .stDateInput {
-        color: white !important;
-    }
-
-    /* White text in dataframes and tables */
-    .stDataFrame, .stTable {
-        color: white !important;
-    }
-
-    /* White for expander and sidebar titles */
-    .streamlit-expanderHeader, .css-1v0mbdj, .css-1d391kg {
-        color: white !important;
-    }
-
-    /* Override charts */
-    svg {
-        color: white !important;
-    }
-
-    /* Fix Streamlit widgets specifically */
-    .css-ffhzg2, .css-1offfwp, .css-1v0mbdj, .css-1d391kg, .css-1ht1j8u {
-        color: white !important;
-    }
-
-    /* Adjust buttons */
-    button {
-        color: white !important;
-    }
+    ...
     </style>
 """, unsafe_allow_html=True)
 .main-header {
